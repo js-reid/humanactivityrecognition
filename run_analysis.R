@@ -35,4 +35,4 @@ HAR_means <- suppressWarnings(partialset %>% group_by(subject,activity_type) %>%
 HAR_means <- subset(HAR_means, select = -source)
 
 # write the table to a local file
-write.table(HAR_means,file="HAR_means.txt")
+write.table(HAR_means,file="HAR_means.txt",row.names=FALSE)
